@@ -13,15 +13,43 @@
   </head>
 
   <body class="bg-gray-700">
-    <!-- navba -->
-    <div class="mt-0 bg-blue-700 py-2">
-      <ul class="flex space-x-4 mx-8 justify-center border-solid border-3">
-          <li><a href="/public/css/index.html" class="text-white hover:bg-blue-800 focus:ring-2 focus:ring-blue-300 font-medium rounded-lg text-sm px-2 py-2.5 me-2 mb-2 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800 transition-all">Home</a></li>
-          <li><a href="/public/css/Project.html" class="text-white hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-3 py-2.5 me-2 mb-2 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800 transition-all">Project</a></li>
-          <li><a href="#" class="text-white hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-2 py-2.5 me-2 mb-2 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800 transition-all">About</a></li>
-          <li><a href="#" class="text-white hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-2 py-2.5 me-2 mb-2 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800 transition-all">Blog</a></li>
-      </ul>
+     <!-- Navbar -->
+  <div class="mt-0 bg-blue-700 py-2 hidden md:block">
+    <ul class="flex space-x-4 mx-8 justify-center border-solid border-3">
+      <li><a href="/public/css/index.html" class="text-white hover:bg-blue-800 focus:ring-2 focus:ring-blue-300 font-medium rounded-lg text-sm px-2 py-2.5 me-2 mb-2 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800 transition-all">Home</a></li>
+      <li><a href="/public/css/Project.html" class="text-white hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-3 py-2.5 me-2 mb-2 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800 transition-all">Project</a></li>
+      <li><a href="#" class="text-white hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-2 py-2.5 me-2 mb-2 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800 transition-all">About</a></li>
+      <li><a href="#" class="text-white hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-2 py-2.5 me-2 mb-2 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800 transition-all">Blog</a></li>
+    </ul>
   </div>
+
+  <!-- Hamburger Menu for Mobile -->
+  <div class="md:hidden bg-blue-700">
+    <button id="hamburger-icon" class="text-white p-2 focus:outline-none">
+      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="h-6 w-6">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+      </svg>
+    </button>
+    <!-- Mobile Menu (hidden by default) -->
+    <div id="mobile-menu" class="hidden bg-blue-700 py-2">
+      <ul class="flex flex-col space-y-2 items-center">
+        <li><a href="/public/css/index.html" class="text-white hover:bg-blue-800 font-medium rounded-lg text-sm px-2 py-2.5 dark:hover:bg-blue-700 transition-all">Home</a></li>
+        <li><a href="/public/css/Project.html" class="text-white hover:bg-blue-800 font-medium rounded-lg text-sm px-2 py-2.5 dark:hover:bg-blue-700 transition-all">Project</a></li>
+        <li><a href="#" class="text-white hover:bg-blue-800 font-medium rounded-lg text-sm px-2 py-2.5 dark:hover:bg-blue-700 transition-all">About</a></li>
+        <li><a href="#" class="text-white hover:bg-blue-800 font-medium rounded-lg text-sm px-2 py-2.5 dark:hover:bg-blue-700 transition-all">Blog</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <script>
+    // JavaScript to toggle the visibility of the mobile menu
+    const hamburgerIcon = document.getElementById('hamburger-icon');
+    const mobileMenu = document.getElementById('mobile-menu');
+
+    hamburgerIcon.addEventListener('click', () => {
+      mobileMenu.classList.toggle('hidden');
+    });
+  </script>
   
   
     <h2 class="text-cyan-600 text-center mt-1.5">Hello Everyone 👋, My name is</h2>
