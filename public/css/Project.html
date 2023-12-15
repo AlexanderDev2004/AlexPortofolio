@@ -13,148 +13,188 @@
   </head>
   <body class="bg-gray-700">
     <!-- Navbar -->
-  <div class="mt-0 bg-blue-700 py-2 hidden md:block">
-    <ul class="flex space-x-4 mx-8 justify-center border-solid border-3">
-      <li><a href="/public/css/index.html" class="text-white hover:bg-blue-800 focus:ring-2 focus:ring-blue-300 font-medium rounded-lg text-sm px-2 py-2.5 me-2 mb-2 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800 transition-all">Home</a></li>
-      <li><a href="/public/css/Project.html" class="text-white hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-3 py-2.5 me-2 mb-2 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800 transition-all">Project</a></li>
-      <li><a href="#" class="text-white hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-2 py-2.5 me-2 mb-2 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800 transition-all">About</a></li>
-      <li><a href="#" class="text-white hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-2 py-2.5 me-2 mb-2 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800 transition-all">Blog</a></li>
-    </ul>
-  </div>
-
-  <!-- Hamburger Menu for Mobile -->
-  <div class="md:hidden bg-blue-700">
-    <button id="hamburger-icon" class="text-white p-2 focus:outline-none">
-      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="h-6 w-6">
-        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
-      </svg>
-    </button>
-    <!-- Mobile Menu (hidden by default) -->
-    <div id="mobile-menu" class="hidden bg-blue-700 py-2">
-      <ul class="flex flex-col space-y-2 items-center">
-        <li><a href="/public/css/index.html" class="text-white hover:bg-blue-800 font-medium rounded-lg text-sm px-2 py-2.5 dark:hover:bg-blue-700 transition-all">Home</a></li>
-        <li><a href="/public/css/Project.html" class="text-white hover:bg-blue-800 font-medium rounded-lg text-sm px-2 py-2.5 dark:hover:bg-blue-700 transition-all">Project</a></li>
-        <li><a href="#" class="text-white hover:bg-blue-800 font-medium rounded-lg text-sm px-2 py-2.5 dark:hover:bg-blue-700 transition-all">About</a></li>
-        <li><a href="#" class="text-white hover:bg-blue-800 font-medium rounded-lg text-sm px-2 py-2.5 dark:hover:bg-blue-700 transition-all">Blog</a></li>
+    <div class="mt-0 bg-blue-700 py-2 hidden md:block">
+      <ul class="flex space-x-4 mx-8 justify-center border-solid border-3">
+        <li>
+          <a
+            href="/public/css/index.html"
+            class="text-white hover:bg-blue-800 focus:ring-2 focus:ring-blue-300 font-medium rounded-lg text-sm px-2 py-2.5 me-2 mb-2 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800 transition-all"
+            >Home</a
+          >
+        </li>
+        <li>
+          <a
+            href="/public/css/Project.html"
+            class="text-white hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-3 py-2.5 me-2 mb-2 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800 transition-all"
+            >Project</a
+          >
+        </li>
+        <li>
+          <a
+            href="#"
+            class="text-white hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-2 py-2.5 me-2 mb-2 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800 transition-all"
+            >About</a
+          >
+        </li>
+        <li>
+          <a
+            href="#"
+            class="text-white hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-2 py-2.5 me-2 mb-2 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800 transition-all"
+            >Blog</a
+          >
+        </li>
       </ul>
     </div>
-  </div>
 
-  <script>
-    // JavaScript to toggle the visibility of the mobile menu
-    const hamburgerIcon = document.getElementById('hamburger-icon');
-    const mobileMenu = document.getElementById('mobile-menu');
-
-    hamburgerIcon.addEventListener('click', () => {
-      mobileMenu.classList.toggle('hidden');
-    });
-  </script>
-    <!-- penjelasan -->
-    <div class="text-center">
-      <h1 class="text-cyan-400">
-        Hello, Everyone 👋 <br />
-        This is a project that I have been working on. Please have a look.
-      </h1>
-    </div>
-
-    <div class="text-center">
-      <h1 class="text-cyan-400">Personal Project</h1>
-    </div>
-
-    <!-- Personal Project -->
-    <div
-      class="max-w-xl mx-auto mt-8 bg-white border border-gray-200 rounded-lg shadow-lg dark:bg-gray-800 dark:border-gray-700 overflow-hidden"
-    >
-      <!-- Image Section -->
-      <a href="#" class="block">
-        <img
-          src="/public/img/iconAlex (1).jpeg"
-          alt="Icon Alex"
-          class="w-full h-25 object-cover"
-        />
-      </a>
-
-      <!-- Description Section -->
-      <div class="p-4">
-        <h5 class="text-xl font-bold mb-2 text-gray-900 dark:text-white">
-          Noteworthy Technology Acquisitions 2021
-        </h5>
-        <p class="text-gray-700 dark:text-gray-400">
-          Here are the biggest enterprise technology acquisitions of 2021 so
-          far, in reverse chronological order.
-        </p>
-      </div>
-
-      <!-- Read More Button -->
-      <a
-        href="#"
-        class="block p-4 bg-blue-700 text-white text-center hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800 transition-all"
-      >
-        Read more
+    <!-- Hamburger Menu for Mobile -->
+    <div class="md:hidden bg-blue-700">
+      <button id="hamburger-icon" class="text-white p-2 focus:outline-none">
         <svg
-          class="rtl:rotate-180 w-3.5 h-3.5 inline-block ml-2"
-          aria-hidden="true"
           xmlns="http://www.w3.org/2000/svg"
           fill="none"
-          viewBox="0 0 14 10"
+          viewBox="0 0 24 24"
+          stroke="currentColor"
+          class="h-6 w-6"
         >
           <path
-            stroke="currentColor"
             stroke-linecap="round"
             stroke-linejoin="round"
             stroke-width="2"
-            d="M1 5h12m0 0L9 1m4 4L9 9"
-          />
+            d="M4 6h16M4 12h16m-7 6h7"
+          ></path>
         </svg>
-      </a>
+      </button>
+      <!-- Mobile Menu (hidden by default) -->
+      <div id="mobile-menu" class="hidden bg-blue-700 py-2">
+        <ul class="flex flex-col space-y-2 items-center">
+          <li>
+            <a
+              href="/public/css/index.html"
+              class="text-white hover:bg-blue-800 font-medium rounded-lg text-sm px-2 py-2.5 dark:hover:bg-blue-700 transition-all"
+              >Home</a
+            >
+          </li>
+          <li>
+            <a
+              href="/public/css/Project.html"
+              class="text-white hover:bg-blue-800 font-medium rounded-lg text-sm px-2 py-2.5 dark:hover:bg-blue-700 transition-all"
+              >Project</a
+            >
+          </li>
+          <li>
+            <a
+              href="#"
+              class="text-white hover:bg-blue-800 font-medium rounded-lg text-sm px-2 py-2.5 dark:hover:bg-blue-700 transition-all"
+              >About</a
+            >
+          </li>
+          <li>
+            <a
+              href="#"
+              class="text-white hover:bg-blue-800 font-medium rounded-lg text-sm px-2 py-2.5 dark:hover:bg-blue-700 transition-all"
+              >Blog</a
+            >
+          </li>
+        </ul>
+      </div>
     </div>
 
-    <!-- Card 2 -->
-    <div
-      class="max-w-xl mx-auto mt-8 bg-white border border-gray-200 rounded-lg shadow-lg dark:bg-gray-800 dark:border-gray-700 overflow-hidden"
-    >
-      <!-- Image Section -->
-      <a href="#" class="block">
-        <img
-          src="/public/img/logoiconhorror.jpg"
-          alt="Logo Icon Horror"
-          class="w-full h-30 object-cover"
-        />
-      </a>
+    <script>
+      // JavaScript to toggle the visibility of the mobile menu
+      const hamburgerIcon = document.getElementById("hamburger-icon");
+      const mobileMenu = document.getElementById("mobile-menu");
 
-      <!-- Description Section -->
-      <div class="p-4">
-        <h5 class="text-xl font-bold mb-2 text-gray-900 dark:text-white">
-          Noteworthy Technology Acquisitions 2021
-        </h5>
-        <p class="text-gray-700 dark:text-gray-400">
-          Here are the biggest enterprise technology acquisitions of 2021 so
-          far, in reverse chronological order.
-        </p>
+      hamburgerIcon.addEventListener("click", () => {
+        mobileMenu.classList.toggle("hidden");
+      });
+    </script>
+    <!-- Judul -->
+    <div class="text-center">
+      <div class="text-cyan-500">
+        <h1>My Personal Project</h1>
       </div>
+    </div>
 
-      <!-- Read More Button -->
-      <a
-        href="#"
-        class="block p-4 bg-blue-700 text-white text-center hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800 transition-all"
-      >
-        Read more
-        <svg
-          class="rtl:rotate-180 w-3.5 h-3.5 inline-block ml-2"
-          aria-hidden="true"
-          xmlns="http://www.w3.org/2000/svg"
-          fill="none"
-          viewBox="0 0 14 10"
-        >
-          <path
-            stroke="currentColor"
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            stroke-width="2"
-            d="M1 5h12m0 0L9 1m4 4L9 9"
+    <!-- Icon 1 -->
+    <div class="project-preview flex">
+      <figure class="project-preview__media w-5/12">
+        <a href="#">
+          <img
+            class="w-full h-auto transition-transform duration-300 transform hover:scale-110"
+            src="/public/img/iconAlex (1).jpeg"
+            srcset="
+              https://res.cloudinary.com/dcnsoj8sy/image/upload/v1702661969/alex/IconAlex.jpg 1x,
+              https://res.cloudinary.com/dcnsoj8sy/image/upload/v1702661969/alex/IconAlex.jpg 2x
+            "
+            alt="IconAlex"
           />
-        </svg>
-      </a>
+        </a>
+      </figure>
+
+      <!-- Penjelasan singkat gambar -->
+      <div class="project-preview__content mt-4 ml-4">
+        <h2 class="text-2xl font-bold mb-2">
+          <a href="#" class="text-blue-500 hover:underline">あ (A)</a>
+        </h2>
+        <p class="text-gray-700 mb-4">
+          This is my logo/icon that I made. I used the letter
+          <span class="text-red-700 font-medium">あ</span> because it suits me
+          so I used this as my logo.
+        </p>
+        <div class="flex items-center mb-4">
+          <div class="mr-4">
+            <strong>Use:</strong>
+          </div>
+          <ul class="list list--regular">
+            <li class="list__item">Pixellab (mobile)</li>
+          </ul>
+        </div>
+        <div class="flex justify-start">
+          <a href="#" class="btn btn-primary"> View Details </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Icon 2 -->
+    <div class="project-preview flex">
+      <figure class="project-preview__media w-5/12">
+        <a href="#">
+          <img
+            class="w-full h-auto transition-transform duration-300 transform hover:scale-110"
+            src="/public/img/logoiconhorror.jpg"
+            srcset="
+              https://res.cloudinary.com/dcnsoj8sy/image/upload/v1702661984/alex/IconGameEscapeAlex.jpg 1x,
+              https://res.cloudinary.com/dcnsoj8sy/image/upload/v1702661984/alex/IconGameEscapeAlex.jpg 2x
+            "
+            alt="Game Escape Alex"
+          />
+        </a>
+      </figure>
+
+      <!-- Penjelasan singkat gambar -->
+      <div class="project-preview__content mt-4 ml-4">
+        <h2 class="text-2xl font-bold mb-2">
+          <a href="#" class="text-blue-500 hover:underline">Escape From Alex</a>
+        </h2>
+        <p class="text-gray-700 mb-4">
+          This is a game that I made with my team when I was in high school. </br>
+          This project is actually only for the final assignment to be able to 
+          pass,</br> you can also play this game, please press the <span class="text-cyan-400">Views Details</span>
+          button or press the image.
+        </p>
+        <div class="flex items-center mb-4">
+          <div class="mr-4">
+            <strong>Use:</strong>
+          </div>
+          <ul class="list list--regular">
+            <li class="list__item">UNITY</li>
+            <li class="list__item">C++</li>
+          </ul>
+        </div>
+        <div class="flex justify-start">
+          <a href="#" class="btn btn-primary"> View Details </a>
+        </div>
+      </div>
     </div>
   </body>
 </html>
