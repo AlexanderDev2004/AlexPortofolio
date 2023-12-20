@@ -10,6 +10,23 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/@tabler/core@1.0.0-beta17/dist/css/tabler.min.css"
     />
+    <style>
+      @keyframes floatRainbow {
+        0% {
+          transform: translateY(0) rotate(0deg);
+        }
+        50% {
+          transform: translateY(-10px) rotate(280deg);
+        }
+        100% {
+          transform: translateY(0) rotate(360deg);
+        }
+      }
+  
+      .float-rainbow {
+        animation: floatRainbow 3s infinite;
+      }
+    </style>
   </head>
 
   <body class="bg-gray-700">
@@ -110,17 +127,53 @@
       });
     </script>
 
+    <!-- About Me -->
     <div class="text-cyan-400">
       <h1 class="text-center">ABOUT ME</h1>
-      <div class="py-2">
+      <div class="py-1 m-1">
         <h1>Hello 👋✨</h1>
-        <p class="text-red-500 py-0 text-opacity-80 text">
-          Hello my name is Alex I was born in Indonesia, I know programming
-          languages ​​since 2020, I am also a student at Malang State
-          Polytechnic majoring in Information Technology. My hobby is playing
-          games and sports.
+        <p class="text-black py-0 text-opacity-80 text-sm py-1 m-1 font-sans">
+          Hello My Name is <span class="text-xl text-cyan-500">Alexander Agung Raya</span>. I was born and raised in Indonesia, I know
+          programming language since 2020, I am also a student in Malang
+          Polytechnic majoring in Information Technology. </br> My hobby is playing
+          games and sports. I was interested in learning to program since I saw
+          a video on YouTube about Game Developers. Since then I tried coding
+          but at that time my <span class="text-red-800">device</span> didn't meet the requirements but I tried to
+          find a way to at least make something, not just games, I also made
+          websites too.
         </p>
       </div>
+    </div>
+
+
+    <!-- About Website -->
+    <div class="">
+      <h1 class="">About Website </h1>
+    </div>
+    <div class="">
+      <p class="">
+        This is my personal site where I put some of my posts and showcase some of my projects. </br> 
+        I made this using the CSS framework, namely <a href="https://tailwindcss.com/"  rel="Tailwind CSS">Tailwind CSS</a> and I will try to update it to be even better than before.
+      </p>
+      
+    </div>
+
+    <!-- Contact Me -->
+    <div class="">
+      <h1 class="">Contact</h1>
+    </div>
+    <div class="">
+      <p class="">You can DM me on Social Media > Email > Github > Discord
+        Thank you for visiting this website. I hope we can work together with you. Have a nice day :>
+      </p>
+    </div>
+
+    <!-- Ucapan -->
+    <div class="text-center m-3 py-7">
+      <p class="text-xl font-bold mb-4 float-rainbow">Terimah Kasih</p>
+      <p class="text-xl font-bold mb-4 float-rainbow">ありがとう</p>
+      <p class="text-xl font-bold mb-4 float-rainbow">Thank You</p>
+      <p class="text-xl font-bold mb-4 float-rainbow">谢谢</p>
     </div>
   </body>
 </html>
