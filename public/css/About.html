@@ -4,8 +4,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>About</title>
-    <link rel="stylesheet" href="/public/css/output.css" />
-    <link href="/public/img/iconAlex.jpeg" rel="icon Alexander" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" />
+    <link href="/public/img/iconAlex.jpeg" rel="icon" />
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/@tabler/core@1.0.0-beta17/dist/css/tabler.min.css"
@@ -22,42 +22,42 @@
           transform: translateY(0) rotate(360deg);
         }
       }
-  
+
       .float-rainbow {
         animation: floatRainbow 3s infinite;
       }
     </style>
   </head>
 
-  <body class="bg-gray-700">
+  <body class="bg-gradient-to-r from-blue-700 to-blue-500 text-white font-sans">
     <!-- Navbar -->
     <div class="mt-0 bg-blue-700 py-2 hidden md:block">
       <ul class="flex space-x-4 mx-8 justify-center border-solid border-3">
         <li>
           <a
             href="/public/css/index.html"
-            class="text-white hover:bg-blue-800 focus:ring-2 focus:ring-blue-300 font-medium rounded-lg text-sm px-2 py-2.5 me-2 mb-2 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800 transition-all"
+            class="text-white hover:bg-blue-800 font-medium rounded-lg text-sm px-2 py-2.5 me-2 mb-2 dark:hover:bg-blue-700 transition-all"
             >Home</a
           >
         </li>
         <li>
           <a
             href="/public/css/Project.html"
-            class="text-white hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-3 py-2.5 me-2 mb-2 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800 transition-all"
+            class="text-white hover:bg-blue-800 font-medium rounded-lg text-sm px-3 py-2.5 me-2 mb-2 dark:hover:bg-blue-700 transition-all"
             >Project</a
           >
         </li>
         <li>
           <a
             href="/public/css/About.html"
-            class="text-white hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-2 py-2.5 me-2 mb-2 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800 transition-all"
+            class="text-white hover:bg-blue-800 font-medium rounded-lg text-sm px-2 py-2.5 me-2 mb-2 dark:hover:bg-blue-700 transition-all"
             >About</a
           >
         </li>
         <li>
           <a
             href="#"
-            class="text-white hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-2 py-2.5 me-2 mb-2 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800 transition-all"
+            class="text-white hover:bg-blue-800 font-medium rounded-lg text-sm px-2 py-2.5 me-2 mb-2 dark:hover:bg-blue-700 transition-all"
             >Article</a
           >
         </li>
@@ -128,52 +128,38 @@
     </script>
 
     <!-- About Me -->
-    <div class="text-cyan-400">
-      <h1 class="text-center">ABOUT ME</h1>
-      <div class="py-1 m-1">
-        <h1>Hello 👋✨</h1>
-        <p class="text-black py-0 text-opacity-80 text-sm py-1 m-1 font-sans">
-          Hello My Name is <span class="text-xl text-cyan-500">Alexander Agung Raya</span>. I was born and raised in Indonesia, I know
-          programming language since 2020, I am also a student in Malang
-          Polytechnic majoring in Information Technology. </br> My hobby is playing
-          games and sports. I was interested in learning to program since I saw
-          a video on YouTube about Game Developers. Since then I tried coding
-          but at that time my <span class="text-red-800">device</span> didn't meet the requirements but I tried to
-          find a way to at least make something, not just games, I also made
-          websites too.
+    <div class="text-cyan-400 text-center my-8">
+      <h1 class="text-3xl font-bold">ABOUT ME</h1>
+      <div class="py-4">
+        <h1 class="text-2xl font-bold mb-2">Hello 👋✨</h1>
+        <p class="text-white text-opacity-80 text-sm leading-relaxed">
+          Hello, my name is <span class="text-cyan-500">Alexander Agung Raya</span>. I was born and raised in <span class="text-red-700">Indonesia</span>. I've been passionate about programming since 2020 and I'm currently a student majoring in Information Technology at Malang Polytechnic. My hobbies include playing games and sports. I started coding after being inspired by a YouTube video about game development. Despite initial challenges, I persevered and learned to create not only games but also websites.
         </p>
       </div>
     </div>
 
-
     <!-- About Website -->
-    <div class="">
-      <h1 class="">About Website </h1>
-    </div>
-    <div class="">
-      <p class="">
-        This is my personal site where I put some of my posts and showcase some of my projects. </br> 
-        I made this using the CSS framework, namely <a href="https://tailwindcss.com/"  rel="Tailwind CSS">Tailwind CSS</a> and I will try to update it to be even better than before.
+    <div class="text-center my-8">
+      <h1 class="text-3xl font-bold text-cyan-400">About Website</h1>
+      <p class="text-white text-opacity-80 text-sm">
+        This is my personal site where I share posts and showcase my projects. I built it using the CSS framework, <a href="https://tailwindcss.com/" rel="noopener noreferrer" target="_blank" class="text-red-800 hover:underline">Tailwind CSS</a>, and I'll continue updating it to make it even better.
       </p>
-      
     </div>
 
     <!-- Contact Me -->
-    <div class="">
-      <h1 class="">Contact</h1>
-    </div>
-    <div class="">
-      <p class="">You can DM me on Social Media > Email > Github > Discord
-        Thank you for visiting this website. I hope we can work together with you. Have a nice day :>
+    <div class="text-center my-8">
+      <h1 class="text-3xl font-bold text-cyan-400">Contact</h1>
+      <p class="text-white text-opacity-80 text-sm">
+        You can reach out to me on social media (Github: Discord .alex1110). Thank you for visiting my website. I look forward to the possibility of working together. Have a great day! 😊
       </p>
     </div>
 
     <!-- Ucapan -->
-    <div class="text-center m-3 py-7">
-      <p class="text-xl font-bold mb-4 float-rainbow">Terimah Kasih</p>
-      <p class="text-xl font-bold mb-4 float-rainbow">ありがとう</p>
-      <p class="text-xl font-bold mb-4 float-rainbow">Thank You</p>
-      <p class="text-xl font-bold mb-4 float-rainbow">谢谢</p>
+    <div class="text-center my-8">
+      <p class="text-2xl font-bold mb-4 float-rainbow">Terimah Kasih</p>
+      <p class="text-2xl font-bold mb-4 float-rainbow">ありがとう</p>
+      <p class="text-2xl font-bold mb-4 float-rainbow">Thank You</p>
+      <p class="text-2xl font-bold mb-4 float-rainbow">谢谢</p>
     </div>
   </body>
 </html>
