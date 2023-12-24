@@ -1,190 +1,277 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Searchable Cards</title>
-    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" />
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Article</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+    />
     <link href="/public/img/iconAlex.jpeg" rel="icon" />
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/@tabler/core@1.0.0-beta17/dist/css/tabler.min.css"
     />
-</head>
-<body class="bg-gray-100">
-     <!-- Navbar -->
-     <div class="mt-0 bg-blue-700 py-2 hidden md:block">
-        <ul class="flex space-x-4 mx-8 justify-center border-solid border-3">
+    <link rel="stylesheet" href="/public/css/output.css" />
+  </head>
+  <body class="bg-gray-100">
+    <!-- Navbar -->
+    <div class="mt-0 bg-blue-700 py-2 hidden md:block">
+      <ul class="flex space-x-4 mx-8 justify-center border-solid border-3">
+        <li>
+          <a
+            href="/public/css/index.html"
+            class="text-white hover:bg-blue-800 font-medium rounded-lg text-sm px-2 py-2.5 me-2 mb-2 dark:hover:bg-blue-700 transition-all"
+            >Home</a
+          >
+        </li>
+        <li>
+          <a
+            href="/public/css/Project.html"
+            class="text-white hover:bg-blue-800 font-medium rounded-lg text-sm px-3 py-2.5 me-2 mb-2 dark:hover:bg-blue-700 transition-all"
+            >Project</a
+          >
+        </li>
+        <li>
+          <a
+            href="/public/css/About.html"
+            class="text-white hover:bg-blue-800 font-medium rounded-lg text-sm px-2 py-2.5 me-2 mb-2 dark:hover:bg-blue-700 transition-all"
+            >About</a
+          >
+        </li>
+        <li>
+          <a
+            href="/public/css/Article.html"
+            class="text-white hover:bg-blue-800 font-medium rounded-lg text-sm px-2 py-2.5 me-2 mb-2 dark:hover:bg-blue-700 transition-all"
+            >Article</a
+          >
+        </li>
+      </ul>
+    </div>
+
+    <!-- Hamburger Menu for Mobile -->
+    <div class="md:hidden bg-blue-700">
+      <button id="hamburger-icon" class="text-white p-2 focus:outline-none">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke="currentColor"
+          class="h-6 w-6"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="M4 6h16M4 12h16m-7 6h7"
+          ></path>
+        </svg>
+      </button>
+      <!-- Mobile Menu (hidden by default) -->
+      <div id="mobile-menu" class="hidden bg-blue-700 py-2">
+        <ul class="flex flex-col space-y-2 items-center">
           <li>
             <a
               href="/public/css/index.html"
-              class="text-white hover:bg-blue-800 font-medium rounded-lg text-sm px-2 py-2.5 me-2 mb-2 dark:hover:bg-blue-700 transition-all"
+              class="text-white hover:bg-blue-800 font-medium rounded-lg text-sm px-2 py-2.5 dark:hover:bg-blue-700 transition-all"
               >Home</a
             >
           </li>
           <li>
             <a
               href="/public/css/Project.html"
-              class="text-white hover:bg-blue-800 font-medium rounded-lg text-sm px-3 py-2.5 me-2 mb-2 dark:hover:bg-blue-700 transition-all"
+              class="text-white hover:bg-blue-800 font-medium rounded-lg text-sm px-2 py-2.5 dark:hover:bg-blue-700 transition-all"
               >Project</a
             >
           </li>
           <li>
             <a
               href="/public/css/About.html"
-              class="text-white hover:bg-blue-800 font-medium rounded-lg text-sm px-2 py-2.5 me-2 mb-2 dark:hover:bg-blue-700 transition-all"
+              class="text-white hover:bg-blue-800 font-medium rounded-lg text-sm px-2 py-2.5 dark:hover:bg-blue-700 transition-all"
               >About</a
             >
           </li>
           <li>
             <a
               href="/public/css/Article.html"
-              class="text-white hover:bg-blue-800 font-medium rounded-lg text-sm px-2 py-2.5 me-2 mb-2 dark:hover:bg-blue-700 transition-all"
+              class="text-white hover:bg-blue-800 font-medium rounded-lg text-sm px-2 py-2.5 dark:hover:bg-blue-700 transition-all"
               >Article</a
             >
           </li>
         </ul>
       </div>
-  
-      <!-- Hamburger Menu for Mobile -->
-      <div class="md:hidden bg-blue-700">
-        <button id="hamburger-icon" class="text-white p-2 focus:outline-none">
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            fill="none"
-            viewBox="0 0 24 24"
-            stroke="currentColor"
-            class="h-6 w-6"
-          >
-            <path
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              stroke-width="2"
-              d="M4 6h16M4 12h16m-7 6h7"
-            ></path>
-          </svg>
-        </button>
-        <!-- Mobile Menu (hidden by default) -->
-        <div id="mobile-menu" class="hidden bg-blue-700 py-2">
-          <ul class="flex flex-col space-y-2 items-center">
-            <li>
-              <a
-                href="/public/css/index.html"
-                class="text-white hover:bg-blue-800 font-medium rounded-lg text-sm px-2 py-2.5 dark:hover:bg-blue-700 transition-all"
-                >Home</a
-              >
-            </li>
-            <li>
-              <a
-                href="/public/css/Project.html"
-                class="text-white hover:bg-blue-800 font-medium rounded-lg text-sm px-2 py-2.5 dark:hover:bg-blue-700 transition-all"
-                >Project</a
-              >
-            </li>
-            <li>
-              <a
-                href="/public/css/About.html"
-                class="text-white hover:bg-blue-800 font-medium rounded-lg text-sm px-2 py-2.5 dark:hover:bg-blue-700 transition-all"
-                >About</a
-              >
-            </li>
-            <li>
-              <a
-                href="/public/css/Article.html"
-                class="text-white hover:bg-blue-800 font-medium rounded-lg text-sm px-2 py-2.5 dark:hover:bg-blue-700 transition-all"
-                >Article</a
-              >
-            </li>
-          </ul>
-        </div>
-      </div>
-  
-      <script>
-        // JavaScript to toggle the visibility of the mobile menu
-        const hamburgerIcon = document.getElementById("hamburger-icon");
-        const mobileMenu = document.getElementById("mobile-menu");
-  
-        hamburgerIcon.addEventListener("click", () => {
-          mobileMenu.classList.toggle("hidden");
-        });
-      </script>
+    </div>
 
-<div class="container mx-auto mt-8 text-center">
-    <h1 class="text-3xl font-bold mb-4 text-gray-800">All Articles</h1>
+    <script>
+      // JavaScript to toggle the visibility of the mobile menu
+      const hamburgerIcon = document.getElementById("hamburger-icon");
+      const mobileMenu = document.getElementById("mobile-menu");
 
-    <!-- Search Bar -->
-    <div class="mb-8 max-w-md mx-auto">
+      hamburgerIcon.addEventListener("click", () => {
+        mobileMenu.classList.toggle("hidden");
+      });
+    </script>
+
+    <div class="container mx-auto mt-8 text-center">
+      <h1 class="text-3xl font-bold mb-4 text-gray-800">All Articles</h1>
+
+      <!-- Search Bar -->
+      <div class="mb-8 max-w-md mx-auto">
         <input
-            id="searchInput"
-            type="text"
-            placeholder="Search by Tag or Title"
-            class="p-3 border border-gray-300 rounded-md w-full focus:outline-none focus:ring focus:border-blue-300"
+          id="searchInput"
+          type="text"
+          placeholder="Search by Tag, Title or DateTime"
+          class="p-3 border border-gray-300 rounded-md w-full focus:outline-none focus:ring focus:border-blue-300"
         />
         <button
-            onclick="searchText()"
-            class="mt-2 px-4 py-2 bg-blue-500 text-white rounded-md hover:bg-blue-600 focus:outline-none focus:ring focus:border-blue-300"
+          onclick="searchText()"
+          class="mt-2 px-4 py-2 bg-blue-500 text-white rounded-md hover:bg-blue-600 focus:outline-none focus:ring focus:border-blue-300"
         >
-            Search
+          Search
         </button>
-    </div>
+      </div>
 
-    <!-- Card Component -->
-    <div id="cardContainer" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
-        <!-- Example Card 1 -->
-        <div class="bg-white p-6 rounded-md shadow-md transition-transform transform hover:scale-105 cursor-pointer"
-             onclick="viewCard('Card Title 1', 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.', ['Tag A', 'Tag B'])">
-            <h2 class="text-xl font-bold mb-4 text-gray-800">Card Title 1</h2>
-            <p class="text-gray-600 mb-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-            <div class="flex items-center space-x-2 mb-4">
-                <span class="bg-blue-500 text-white px-3 py-1 rounded-md text-sm">Tag A</span>
-                <span class="bg-green-500 text-white px-3 py-1 rounded-md text-sm">Tag B</span>
-            </div>
-            <a href="#" class="text-blue-500 hover:underline">Read More</a>
+
+
+
+      <!-- Card Component -->
+      <div>
+        <article class="flex bg-white transition hover:shadow-xl py-1 m-2">
+        <div class="rotate-180 p-2 [writing-mode:_vertical-lr]">
+          <time
+            datetime="2022-10-10"
+            class="flex items-center justify-between gap-4 text-xs font-bold uppercase text-gray-900"
+          >
+            <span>2022</span>
+            <span class="w-px flex-1 bg-gray-900/10"></span>
+            <span>jan 21</span>
+          </time>
         </div>
-
-        <!-- Example Card 2 -->
-        <div class="bg-white p-6 rounded-md shadow-md transition-transform transform hover:scale-105 cursor-pointer"
-             onclick="viewCard('Card Title 2', 'Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.', ['Tag C', 'Tag D'])">
-            <h2 class="text-xl font-bold mb-4 text-gray-800">Card Title 2</h2>
-            <p class="text-gray-600 mb-4">Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-            <div class="flex items-center space-x-2 mb-4">
-                <span class="bg-red-500 text-white px-3 py-1 rounded-md text-sm">Tag C</span>
-                <span class="bg-yellow-500 text-white px-3 py-1 rounded-md text-sm">Tag D</span>
-            </div>
-            <a href="#" class="text-blue-500 hover:underline">Read More</a>
+      
+        <div class="hidden sm:block sm:basis-56">
+          <img
+            alt="Guitar"
+            src="https://images.unsplash.com/photo-1609557927087-f9cf8e88de18?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1740&q=80"
+            class="aspect-square h-full w-full object-cover"
+          />
         </div>
+      
+        <div class="flex flex-1 flex-col justify-between">
+          <div class="border-s border-gray-900/10 p-4 sm:border-l-transparent sm:p-6">
+            <a href="#">
+              <h3 class="font-bold uppercase text-gray-900">
+                Finding the right guitar for your style - 5 tips
+              </h3>
+            </a>
+      
+            <p class="mt-2 line-clamp-3 text-sm/relaxed text-gray-700">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae dolores, possimus
+              pariatur animi temporibus nesciunt praesentium dolore sed nulla ipsum eveniet corporis
+              quidem, mollitia itaque minus soluta, voluptates neque explicabo tempora nisi culpa eius
+              atque dignissimos. Molestias explicabo corporis voluptatem?
+            </p>
+          </div>
+      
+          <div class="sm:flex sm:items-end sm:justify-end">
+            <a
+              href="#"
+              class="block bg-yellow-300 px-5 py-3 text-center text-xs font-bold uppercase text-gray-900 transition hover:bg-yellow-400"
+            >
+              Read Blog
+            </a>
+          </div>
+        </div>
+      </article>
+      </div>
+      
+      <article class="flex bg-white transition hover:shadow-xl py-2 m-3">
+        <div class="rotate-180 p-2 [writing-mode:_vertical-lr]">
+          <time
+            datetime="2022-10-10"
+            class="flex items-center justify-between gap-4 text-xs font-bold uppercase text-gray-900"
+          >
+            <span>2022</span>
+            <span class="w-px flex-1 bg-gray-900/10"></span>
+            <span>Oct 10</span>
+          </time>
+        </div>
+      
+        <div class="hidden sm:block sm:basis-56">
+          <img
+            alt="Guitar"
+            src="https://images.unsplash.com/photo-1609557927087-f9cf8e88de18?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1740&q=80"
+            class="aspect-square h-full w-full object-cover"
+          />
+        </div>
+      
+        <div class="flex flex-1 flex-col justify-between">
+          <div class="border-s border-gray-900/10 p-4 sm:border-l-transparent sm:p-6">
+            <a href="#">
+              <h3 class="font-bold uppercase text-gray-900">
+                Finding the right guitar for your style - 5 tips
+              </h3>
+            </a>
+      
+            <p class="mt-2 line-clamp-3 text-sm/relaxed text-gray-700">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae dolores, possimus
+              pariatur animi temporibus nesciunt praesentium dolore sed nulla ipsum eveniet corporis
+              quidem, mollitia itaque minus soluta, voluptates neque explicabo tempora nisi culpa eius
+              atque dignissimos. Molestias explicabo corporis voluptatem?
+            </p>
+          </div>
+      
+          <div class="sm:flex sm:items-end sm:justify-end">
+            <a
+              href="#"
+              class="block bg-yellow-300 px-5 py-3 text-center text-xs font-bold uppercase text-gray-900 transition hover:bg-yellow-400"
+            >
+              Read Blog
+            </a>
+          </div>
+        </div>
+      </article>
+    
+    
 
-        <!-- Add more cards as needed -->
-
-    </div>
-</div>
-
-<script>
-    function searchText() {
+    <script>
+      function searchText() {
         // Get the search input value
-        var searchInput = document.getElementById("searchInput").value.toLowerCase();
+        var searchInput = document
+          .getElementById("searchInput")
+          .value.toLowerCase();
 
         // Get all card containers
         var cardContainers = document.querySelectorAll(".bg-white");
 
         // Loop through each card
         cardContainers.forEach(function (card) {
-            var cardText = card.innerText.toLowerCase();
+          var cardText = card.innerText.toLowerCase();
 
-            // If the card text contains the search input, show the card; otherwise, hide it
-            if (cardText.includes(searchInput)) {
-                card.style.display = "block";
-            } else {
-                card.style.display = "none";
-            }
+          // If the card text contains the search input, show the card; otherwise, hide it
+          if (cardText.includes(searchInput)) {
+            card.style.display = "block";
+          } else {
+            card.style.display = "none";
+          }
         });
-    }
+      }
 
-    function viewCard(title, content, tags) {
-        alert("Card Title: " + title + "\nContent: " + content + "\nTags: " + tags.join(", "));
+      function viewCard(title, content, tags, datetime) {
+        alert(
+          "Card Title: " +
+            title +
+            "\nContent: " +
+            content +
+            "\nTags: " +
+            tags.join(", ")
+        );
         // Add your custom logic for viewing the full card here
-    }
-</script>
-</body>
+      }
+    </script>
+  </body>
 </html>
