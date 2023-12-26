@@ -161,6 +161,13 @@
         </button>
       </span>
     </div>
+    <div id="notFoundAlert" role="alert" class="rounded border-s-4 border-red-500 bg-red-50 p-4" style="display: none;">
+      <strong class="block font-medium text-red-800">Not found</strong>
+      <p class="mt-2 text-sm text-red-700">
+        Didn't find what you were looking for.
+      </p>
+    </div>
+    
     <!-- JS searcing -->
     <script>
       function performSearch() {
@@ -175,6 +182,9 @@
         // Get all articles
         var articles = document.querySelectorAll('article');
     
+        // Variable to track if any matching article is found
+        var found = false;
+    
         // Loop through each article and check if it matches the search term
         articles.forEach(function (article) {
           var title = article.querySelector('h3').innerText.toLowerCase();
@@ -184,21 +194,29 @@
           // Check if the title, date, or tags contain the search term
           if (title.includes(searchTerm) || date.includes(searchTerm) || tags.includes(searchTerm)) {
             article.style.display = 'block';
+            found = true;
           } else {
             article.style.display = 'none';
           }
         });
+    
+        // Display the "not found" alert if no matching articles are found
+        var alertElement = document.getElementById('notFoundAlert');
+        if (!found) {
+          alertElement.style.display = 'block';
+        } else {
+          alertElement.style.display = 'none';
+        }
       }
     
       // Trigger search when Enter key is pressed
       document.getElementById('Search').addEventListener('keydown', function (event) {
         if (event.key === 'Enter') {
           search();
-        } if ('svg') {
-          search();
         }
       });
     </script>
+    
     
 
  
