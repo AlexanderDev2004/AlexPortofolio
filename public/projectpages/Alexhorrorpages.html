@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home</title>
+    <link rel="stylesheet" href="/public/css/output.css" />
+    <link href="/public/img/iconAlex.jpeg" rel="icon Alexander" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@tabler/core@1.0.0-beta17/dist/css/tabler.min.css"
+    />
+  </head>
+
+  <body class="bg-gray-700">
+    <!-- Navbar -->
+    <div class="mt-0 bg-blue-700 py-2 hidden md:block">
+      <ul class="flex space-x-4 mx-8 justify-center border-solid border-3">
+        <li>
+          <a
+            href="/public/css/index.html"
+            class="text-white hover:bg-blue-800 focus:ring-2 focus:ring-blue-300 font-medium rounded-lg text-sm px-2 py-2.5 me-2 mb-2 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800 transition-all"
+            >Home</a
+          >
+        </li>
+        <li>
+          <a
+            href="/public/css/Project.html"
+            class="text-white hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-3 py-2.5 me-2 mb-2 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800 transition-all"
+            >Project</a
+          >
+        </li>
+        <li>
+          <a
+            href="/public/css/About.html"
+            class="text-white hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-2 py-2.5 me-2 mb-2 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800 transition-all"
+            >About</a
+          >
+        </li>
+        <li>
+          <a
+            href="/public/css/Article.html"
+            class="text-white hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-2 py-2.5 me-2 mb-2 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800 transition-all"
+            >Article</a
+          >
+        </li>
+      </ul>
+    </div>
+
+    <!-- Hamburger Menu for Mobile -->
+    <div class="md:hidden bg-blue-700">
+      <button id="hamburger-icon" class="text-white p-2 focus:outline-none">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke="currentColor"
+          class="h-6 w-6"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="M4 6h16M4 12h16m-7 6h7"
+          ></path>
+        </svg>
+      </button>
+      <!-- Mobile Menu (hidden by default) -->
+      <div id="mobile-menu" class="hidden bg-blue-700 py-2">
+        <ul class="flex flex-col space-y-2 items-center">
+          <li>
+            <a
+              href="/public/css/index.html"
+              class="text-white hover:bg-blue-800 font-medium rounded-lg text-sm px-2 py-2.5 dark:hover:bg-blue-700 transition-all"
+              >Home</a
+            >
+          </li>
+          <li>
+            <a
+              href="/public/css/Project.html"
+              class="text-white hover:bg-blue-800 font-medium rounded-lg text-sm px-2 py-2.5 dark:hover:bg-blue-700 transition-all"
+              >Project</a
+            >
+          </li>
+          <li>
+            <a
+              href="/public/css/About.html"
+              class="text-white hover:bg-blue-800 font-medium rounded-lg text-sm px-2 py-2.5 dark:hover:bg-blue-700 transition-all"
+              >About</a
+            >
+          </li>
+          <li>
+            <a
+              href="/public/css/Article.html"
+              class="text-white hover:bg-blue-800 font-medium rounded-lg text-sm px-2 py-2.5 dark:hover:bg-blue-700 transition-all"
+              >Article</a
+            >
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <script>
+      // JavaScript to toggle the visibility of the mobile menu
+      const hamburgerIcon = document.getElementById("hamburger-icon");
+      const mobileMenu = document.getElementById("mobile-menu");
+
+      hamburgerIcon.addEventListener("click", () => {
+        mobileMenu.classList.toggle("hidden");
+      });
+    </script>
+    <!-- Judul -->
+    <div class="text-center text-cyan-400">
+      <h1>ESCAPE FROM ALEX</h1>
+    </div>
+
+    <div
+      class="project-preview flex flex-col md:flex-row py-2 md:justify-center"
+    >
+      <!-- Images -->
+      <figure class="project-preview__media w-full md:w-5/12">
+        <a
+          href="https://alex-game-dev-indonesia.itch.io/escape-from-alex"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <img
+            class="w-full h-auto transition-transform duration-300 transform hover:scale-110"
+            src="https://res.cloudinary.com/dcnsoj8sy/image/upload/v1702661984/alex/IconGameEscapeAlex.jpg"
+            srcset="
+              https://res.cloudinary.com/dcnsoj8sy/image/upload/v1702661984/alex/IconGameEscapeAlex.jpg 1x,
+              https://res.cloudinary.com/dcnsoj8sy/image/upload/v1702661984/alex/IconGameEscapeAlex.jpg 2x
+            "
+            alt="Game Escape Alex"
+          />
+        </a>
+      </figure>
+
+      <!-- About Project -->
+      <div class="py-4 text-center md:w-7/12">
+        <h2>Game Escape Alex</h2>
+        <p>
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Suscipit
+          minus repudiandae officia alias voluptatibus rerum commodi,
+          perferendis asperiores, impedit iste doloremque sunt ad fugiat sint
+          obcaecati laborum eligendi cumque quis voluptatem voluptatum nulla
+          numquam architecto? Ea delectus, minima placeat vitae, assumenda
+          recusandae error est harum unde exercitationem enim ipsam asperiores.
+        </p>
+        
+        <!-- Download Link -->
+        <a
+        href="https://alex-game-dev-indonesia.itch.io/escape-from-alex"
+        class="btn-download bg-blue-500 shadow-lg hover:shadow-blue-500/50 text-white py-2 px-4 rounded"
+        >Download</a
+        >
+      </div>
+    </div>
+  </body>
+</html>
