@@ -1,5 +1,5 @@
 {
-  "name": "alexporto",
+  "name": "alex-porto",
   "type": "module",
   "version": "0.0.1",
   "scripts": {
@@ -10,11 +10,6 @@
     "astro": "astro"
   },
   "dependencies": {
-    "@astrojs/tailwind": "^5.1.0",
-    "astro": "^4.7.1",
-    "tailwindcss": "^3.4.3"
-  },
-  "devDependencies": {
-    "unocss": "^0.59.4"
+    "astro": "^4.7.1"
   }
 }
