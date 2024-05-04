@@ -1,0 +1,28 @@
+---
+import "../layout/MainHeader.astro";
+import MainHeader from "../layout/MainHeader.astro";
+import Nav from "../component/Nav.astro";
+import Footer from "../component/footer.astro";
+const {tiltle, seotiltle , seodesc} = Astro.props;
+---
+
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{tiltle}</title>
+    <meta name="description" content={seodesc}>
+  </head>
+  <body class="bg-slate-800 text-white grip gap-0">
+    <MainHeader tittle={tiltle} seoTitle={seotiltle} seoDesc={seodesc} />
+    <Nav />
+    <Footer />
+    <slot />
+    <style>
+      body {
+        font-family: 'Carlito', sans-serif;
+        min-height: 100vh;
+      }
+    </style>
+  </body>
+</html>

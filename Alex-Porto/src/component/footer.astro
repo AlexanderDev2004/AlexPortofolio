@@ -1,0 +1,16 @@
+---
+
+---
+
+<footer class="text-center mt-auto py-4">
+    <small>Copyright&copy; Alex, <span id="copyright-year"></span></small>
+</footer>
+<script lang="ts">
+  const currentYear = new Date().getFullYear();
+  const copyrightYear = document.getElementById("copyright-year");
+  if (copyrightYear) {
+    copyrightYear.textContent = currentYear.toString();
+  }
+</script>
+
+

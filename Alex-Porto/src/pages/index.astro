@@ -1,16 +1,30 @@
 ---
-
+import "../layout/MainLayout.astro";
+import MainLayout from "../layout/MainLayout.astro";
+const title = "Alexander"
 ---
+<MainLayout title= "Alexander" 
+seotitle="Alex, Web Developer and Game developer" 
+seodesc="Experienced in unity c#, javascript, html, css,Twilindcss"
+>
+<div class="w-8-md:w-6/12 mx-auto">
+	<h1 class="text-5xl md:text-6xl text-center">Hello there 👋, I Alexander</h1>
+</div>
+<div id="typed-strings">
+	<p>I am a <strong>Software Engineer and Game Developer</strong></p>
+	<p>I <em>work</em> with Astro, React, NextJS, node.</p>
+  </div>
 
-<html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
-	</head>
-	<body>
-		<h1>Astro</h1>
-	</body>
-</html>
+  <div class="text-center mt-6"><span id="typed"></span></div>
+</div>
+</MainLayout>
+
+<script>
+import Typed from "typed.js";
+
+var typed = new Typed("#typed", {
+  stringsElement: "#typed-strings",
+  typeSpeed: 50,
+  loop: true,
+});
+</script>
