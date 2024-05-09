@@ -1,0 +1,53 @@
+---
+import MainLayout from "../../layout/MainLayout.astro";
+
+export async function getStaticPaths() {
+  return [
+    {
+      params: { project: "JumpBox" },
+      props: {
+        name: "Game JumpBox",
+        desc: "The game simple witch Unity C#.",
+      },
+    },
+    {
+      params: { project: "FloraQuesst" },
+      props: {
+        name: "FloraQuesst",
+        desc: "The project witch my Team Poligamedev inGameJam+ 2023 ",
+      },
+    },
+    {
+      params: { project: "EscapeFromAlex" },
+      props: {
+        name: "EscapeFromAlex",
+        desc: "This is my project with my team. The project was made in 3 mount. The project was made with Unity C#.",
+      },
+    },
+    {
+      params: { project: "AlexPortfolio" },
+      props: {
+        name: "AlexPortfolio",
+        desc: "This is my project Portofolio. The project was made with Astro, React and NextJS.",
+      },
+    },
+  ];
+}
+
+const { project } = Astro.params;
+const { name, desc } = Astro.props;
+---
+
+<MainLayout>
+  <section class="mx-auto w-3/6">
+    <img
+      src=`/images/${project}.png`
+      width="600"
+      height="600"
+      class="rounded"
+    />
+    <h1 class="font-bold mt-4">Project {name}</h1>
+    <p>{desc}</p>
+    <section></section>
+  </section>
+</MainLayout>

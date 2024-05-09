@@ -13,12 +13,12 @@ const {tiltle, seotiltle , seodesc} = Astro.props;
     <title>{tiltle}</title>
     <meta name="description" content={seodesc}>
   </head>
-  <body class="bg-slate-800 text-white grip gap-0">
+  <body class="bg-slate-800 text-white grip gap-0 min-w-max">
     <MainHeader tittle={tiltle} seoTitle={seotiltle} seoDesc={seodesc} />
     <Nav />
+    <slot />
     <Footer />
     
-    <slot />
     <style>
       body {
         font-family: 'Carlito', sans-serif;
