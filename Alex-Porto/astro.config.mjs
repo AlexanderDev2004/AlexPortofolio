@@ -1,12 +1,14 @@
-import { defineConfig } from 'astro/config';
-import tailwind from "@astrojs/tailwind";
-import vercel from "@astrojs/vercel/serverless";
+import { defineConfig } from "astro/config";
+import sentry from "@sentry/astro";
 
-import icon from "astro-icon";
-
-// https://astro.build/config
 export default defineConfig({
-  integrations: [tailwind(), icon()],
-  output: "server",
-  adapter: vercel()
+  integrations: [
+    sentry({
+      dsn: "https://bf5061e86e600fed95d6b2714913bfba@o4507262637703168.ingest.de.sentry.io/4507262640193616",
+      sourceMapsUploadOptions: {
+        project: "javascript-astro",
+        authToken: process.env.SENTRY_AUTH_TOKEN,
+      },
+    }),
+  ],
 });
