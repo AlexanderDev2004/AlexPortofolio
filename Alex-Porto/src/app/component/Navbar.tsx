@@ -20,7 +20,7 @@ const Navbar: React.FC = () => {
         <div className="hidden md:flex space-x-4">
           <Link href="/" className="hover:text-gray-400">Home</Link>
           <Link href="/about" className="hover:text-gray-400">About</Link>
-          <Link href="/contact" className="hover:text-gray-400">Project</Link>
+          <Link href="/Project" className="hover:text-gray-400">Project</Link>
         </div>
         <div className="md:hidden">
           <button onClick={toggleMenu} className="focus:outline-none">

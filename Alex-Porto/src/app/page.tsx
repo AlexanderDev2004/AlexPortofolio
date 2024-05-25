@@ -18,7 +18,7 @@ export default function Home() {
         </div>
         <div className="flex flex-col items-center md:items-start">
           <h1 className="text-4xl font-bold mb-4 text-center md:text-left">
-            Hello, I Alexander Agung Raya
+            Hello 👋 , I Alexander Agung Raya
           </h1>
           <p className="text-lg mb-6 text-center md:text-left">
             Web Developer and Game Developer
@@ -60,6 +60,7 @@ export default function Home() {
           </div>
         </div>
       </div>
+      
     </main>
   );
 }
