@@ -6,6 +6,7 @@ import { FaLinkedinIn } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
 import { FaInstagram } from "react-icons/fa6";
 import Footer from "@/component/footer/footer";
+
 export default function Home() {
   return (
     
@@ -20,6 +21,7 @@ export default function Home() {
         {/* <a href="http://"><FaXTwitter /></a> */}
         <a href="https://www.instagram.com/alexjynx01/"><FaInstagram /></a>
       </div>
+
       
       {/* <Footer /> */}
       <Footer />
