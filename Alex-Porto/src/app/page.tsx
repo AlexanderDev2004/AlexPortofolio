@@ -12,7 +12,7 @@ export default function Home() {
       <Navbar hover={"hover:text-accent"} />
 
       {/* About */}
-      <div className="flex flex-col items-center justify-center mt-10">
+      <div className="flex flex-col items-center justify-center mt-1">
         <h1 className="text-4xl font-bold text-center">Alexander Agung Raya</h1>
         <p className="text-2xl text-center mt-4">
         {AboutData.About}
