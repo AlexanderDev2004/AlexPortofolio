@@ -1,4 +1,4 @@
-import Link from "next/link"
+import Link from "next/link";
 
 interface NavbarMenuProps {
     hover: string;
@@ -27,5 +27,5 @@ export default function NavbarMenuMobile({ hover }: NavbarMenuProps) {
                 </ul>
             </div>
         </div>
-    )
+    );
 }
