@@ -1,14 +1,18 @@
-import Link from "next/link"
+import Link from "next/link";
 
 interface NavbarMenuProps {
-    hover: string;
+  hover: string;
 }
 
 export default function NavbarMenuDesktop({ hover }: NavbarMenuProps) {
-    return (
-        <div className="hidden sm:block flex gap-4">
-            <Link className={`mr-3 ${hover}`} href={'/experiences'}>Experiences</Link>
-            <Link className={`mr-3 ${hover}`} href={'/projects'}>Projects</Link>
-        </div>
-    )
+  return (
+    <div className="hidden sm:flex gap-4">
+      <Link href="/experiences" className={`mr-3 ${hover}`}>
+        Experiences
+      </Link>
+      <Link href="/projects" className={`mr-3 ${hover}`}>
+        Projects
+      </Link>
+    </div>
+  );
 }
