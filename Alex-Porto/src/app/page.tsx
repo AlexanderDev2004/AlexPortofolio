@@ -15,9 +15,7 @@ export default function Home() {
       <div className="flex flex-col items-center justify-center mt-10">
         <h1 className="text-4xl font-bold text-center">Alexander Agung Raya</h1>
         <p className="text-2xl text-center mt-4">
-          Hai, My Name is Alexander Agung Raya. I am a student at State Polytechnic of Malang. 
-          I have 3 years of experience in programming. As a programmer, I have good knowledge 
-          of C++, Java, JavaScript, and C#.
+        {AboutData.About}
         </p>
       </div>
 
