@@ -5,7 +5,7 @@ interface NavbarTitleProps {
   export default function NavbarTitle({ hover }: NavbarTitleProps) {
     return (
       <div className={`navbar-title ${hover}`}>
-        <h1>Alx</h1>
+        <a href="/">Alx</a>
       </div>
     );
   }
