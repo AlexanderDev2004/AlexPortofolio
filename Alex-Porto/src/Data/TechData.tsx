@@ -54,6 +54,31 @@ const TechData = [
     title: "Next.js",
     image: "https://img.icons8.com/color/48/null/next-js.png",
   },
+  {
+    id: 12,
+    title: "React.js",
+    image: "https://img.icons8.com/color/48/null/react-native.png",
+  },
+  {
+    id: 13,
+    title: "Redux",
+    image: "https://img.icons8.com/color/48/null/redux.png",
+  },
+  {
+    id: 14,
+    title: "Git",
+    image: "https://img.icons8.com/color/48/null/git.png",
+  },
+  {
+    id: 15,
+    title: "GitHub",
+    image: "https://img.icons8.com/color/48/null/github.png",
+  },
+  {
+    id: 16,
+    title: "Node.js",
+    image: "https://img.icons8.com/color/48/null/nodejs.png",
+  },
 ];
 
 export default TechData;

@@ -10,6 +10,13 @@ export default function Home() {
     <main className="flex min-h-screen flex-col items-center justify-between p-24">
       <Navbar hover={"hover:text-accent"} />
 
+
+      {/* About */}
+      <div className="flex flex-col items-center justify-center">
+        <h1 className="text-4xl font-bold">Alexander Agung Raya</h1>
+        <p className="text-2xl">{AboutData.About}</p>
+      </div>
+
       {/* Media Links */}
       <div className="grid grid-cols-4 gap-4">
         <p className="text-1xl"></p>
@@ -19,7 +26,7 @@ export default function Home() {
         {/* <a href="http://"><FaXTwitter /></a> */}
         <a href="https://www.instagram.com/alexjynx01/" target="_blank" rel="noopener noreferrer"><FaInstagram /></a>
       </div>
-
+      
       {/* Footer */}
       <Footer />
     </main>
