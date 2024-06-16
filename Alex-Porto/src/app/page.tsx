@@ -7,24 +7,33 @@ import AboutData from "@/Data/AboutData";
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
+    <main className="flex flex-col min-h-screen items-center justify-between p-24">
+      {/* Navbar at the top */}
       <Navbar hover={"hover:text-accent"} />
 
-
       {/* About */}
-      <div className="flex flex-col items-center justify-center">
-        <h1 className="text-4xl font-bold">Alexander Agung Raya</h1>
-        <p className="text-2xl">{AboutData.About}</p>
+      <div className="flex flex-col items-center justify-center mt-10">
+        <h1 className="text-4xl font-bold text-center">Alexander Agung Raya</h1>
+        <p className="text-2xl text-center mt-4">
+          Hai, My Name is Alexander Agung Raya. I am a student at State Polytechnic of Malang. 
+          I have 3 years of experience in programming. As a programmer, I have good knowledge 
+          of C++, Java, JavaScript, and C#.
+        </p>
       </div>
 
       {/* Media Links */}
-      <div className="grid grid-cols-4 gap-4">
-        <p className="text-1xl"></p>
-        <a href="https://github.com/AlexanderDev2004" target="_blank" rel="noopener noreferrer"><FaGithub /></a>
-        <a href="https://www.linkedin.com/in/alexander-agung-raya-028770238/" target="_blank" rel="noopener noreferrer"><FaLinkedinIn /></a>
-        {/* Uncomment jika Twitter diaktifkan */}
-        {/* <a href="http://"><FaXTwitter /></a> */}
-        <a href="https://www.instagram.com/alexjynx01/" target="_blank" rel="noopener noreferrer"><FaInstagram /></a>
+      <div className="flex justify-center items-center mt-10 space-x-4">
+        <a href="https://github.com/AlexanderDev2004" target="_blank" rel="noopener noreferrer">
+          <FaGithub size={30} />
+        </a>
+        <a href="https://www.linkedin.com/in/alexander-agung-raya-028770238/" target="_blank" rel="noopener noreferrer">
+          <FaLinkedinIn size={30} />
+        </a>
+        {/* Uncomment if Twitter is enabled */}
+        {/* <a href="http://"><FaTwitter size={30} /></a> */}
+        <a href="https://www.instagram.com/alexjynx01/" target="_blank" rel="noopener noreferrer">
+          <FaInstagram size={30} />
+        </a>
       </div>
       
       {/* Footer */}
