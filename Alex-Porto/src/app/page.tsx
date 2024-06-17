@@ -7,14 +7,14 @@ import AboutData from "@/Data/AboutData";
 
 export default function Home() {
   return (
-    <main className="flex flex-col min-h-screen items-center justify-between p-24">
+    <main className="flex flex-col min-h-screen items-center justify-between p-4">
       {/* Navbar at the top */}
       <Navbar hover={"hover:text-accent"} />
 
       {/* About */}
-      <div className="flex flex-col items-center justify-center mt-1">
+      <div className="flex flex-col items-center justify-center mt-1 ">
         <h1 className="text-4xl font-bold text-center">Alexander Agung Raya</h1>
-        <p className="text-2xl text-center mt-4">
+        <p className="text-2xl text-center mt-4 ">
           {AboutData.About}
         </p>
       </div>
