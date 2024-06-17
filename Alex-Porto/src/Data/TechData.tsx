@@ -1,3 +1,5 @@
+import { title } from "process";
+
 const TechData = [
   {
     id: 1,
@@ -78,6 +80,56 @@ const TechData = [
     id: 16,
     title: "Node.js",
     image: "https://img.icons8.com/color/48/null/nodejs.png",
+  },
+  {
+    id: 17,
+    title: "MySQL",
+    image: "https://img.icons8.com/color/48/null/mysql-logo.png",
+  },
+  {
+    id: 18,
+    title: "MongoDB",
+    image: "https://img.icons8.com/color/48/null/mongodb.png",
+  },
+  {
+    id: 19,
+    title: "Express.js",
+    image: "https://img.icons8.com/color/48/null/express-js.png",
+  },
+  {
+    id: 20,
+    title: "PHP",
+    image: "https://img.icons8.com/color/48/null/php-logo.png",
+  },
+  {
+    id: 21,
+    title: "Laravel",
+    image: "https://img.icons8.com/color/48/null/laravel.png",
+  },
+  {
+    id:22,
+    title: "Next.js",
+    image: "https://img.icons8.com/color/48/null/next-js.png",
+  },
+  {
+    id: 23,
+    title: "Figma",
+    image: "https://img.icons8.com/color/48/null/figma.png",
+  },
+  {
+    id: 24,
+    title: "Unity",
+    image: "https://img.icons8.com/color/48/null/unity.png",
+  },
+  {
+    id: 25,
+    title: "Blender",
+    image: "https://img.icons8.com/color/48/null/blender.png",
+  },
+  {
+    id: 26,
+    title: "Unreal Engine",
+    image: "https://img.icons8.com/color/48/null/unreal-engine.png",
   },
 ];
 
