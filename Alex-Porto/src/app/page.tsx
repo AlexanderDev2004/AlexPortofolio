@@ -20,8 +20,8 @@ export default function Home() {
       </div>
 
       {/* Media Links */}
-      <div className="flex justify-center items-center mt-10 space-x-4">
-        <a href="https://github.com/AlexanderDev2004" target="_blank" rel="noopener noreferrer">
+      <div className="flex justify-center items-center mt-10 space-x-4 animate-bounce w-6 h-6">
+        <a  href="https://github.com/AlexanderDev2004" target="_blank" rel="noopener noreferrer">
           <FaGithub size={30} />
         </a>
         <a href="https://www.linkedin.com/in/alexander-agung-raya-028770238/" target="_blank" rel="noopener noreferrer">
