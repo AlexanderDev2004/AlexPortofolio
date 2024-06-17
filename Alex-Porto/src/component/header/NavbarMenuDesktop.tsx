@@ -7,11 +7,11 @@ interface NavbarMenuProps {
 export default function NavbarMenuDesktop({ hover }: NavbarMenuProps) {
   return (
     <div className="hidden lg:flex gap-4 items-center">
-      <Link href="/projects" className={hover}>
-        Projects
+      <Link href="/projects">
+        <a className={hover}>Projects</a>
       </Link>
-      <Link href="/experiences" className={hover}>
-        Experiences
+      <Link href="/experiences">
+        <a className={hover}>Experiences</a>
       </Link>
     </div>
   );
