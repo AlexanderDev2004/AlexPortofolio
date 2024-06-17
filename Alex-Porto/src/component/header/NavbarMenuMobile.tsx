@@ -15,13 +15,13 @@ export default function NavbarMenuMobile({ hover }: NavbarMenuProps) {
         </button>
         <ul tabIndex={0} className="menu menu-sm dropdown-content mt-3 z-10 right-0 p-3 shadow bg-base-100 rounded-box w-52">
           <li>
-            <Link href="/experiences">
-              <a className={hover}>Experiences</a>
+            <Link href="/experiences" className={hover}>
+              Experiences
             </Link>
           </li>
           <li>
-            <Link href="/projects">
-              <a className={hover}>Projects</a>
+            <Link href="/projects" className={hover}>
+              Projects
             </Link>
           </li>
         </ul>
