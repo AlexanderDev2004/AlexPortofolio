@@ -15,7 +15,7 @@ export default function Home() {
       <div className="flex flex-col items-center justify-center mt-1">
         <h1 className="text-4xl font-bold text-center">Alexander Agung Raya</h1>
         <p className="text-2xl text-center mt-4">
-        {AboutData.About}
+          {AboutData.About}
         </p>
       </div>
 
