@@ -1,6 +1,3 @@
-import imagesGame from "./ImagesGame";
+// import { imagesGame } from "./ImagesGame";
 
-const images = {
-    ...imagesGame
-}
-export default images;
+// export default imagesGame;
