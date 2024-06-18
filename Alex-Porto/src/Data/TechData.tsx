@@ -1,5 +1,3 @@
-import { title } from "process";
-
 const TechData = [
   {
     id: 1,
@@ -107,27 +105,22 @@ const TechData = [
     image: "https://img.icons8.com/color/48/null/laravel.png",
   },
   {
-    id:22,
-    title: "Next.js",
-    image: "https://img.icons8.com/color/48/null/next-js.png",
-  },
-  {
-    id: 23,
+    id: 22,
     title: "Figma",
     image: "https://img.icons8.com/color/48/null/figma.png",
   },
   {
-    id: 24,
+    id: 23,
     title: "Unity",
     image: "https://img.icons8.com/color/48/null/unity.png",
   },
   {
-    id: 25,
+    id: 24,
     title: "Blender",
     image: "https://img.icons8.com/color/48/null/blender.png",
   },
   {
-    id: 26,
+    id: 25,
     title: "Unreal Engine",
     image: "https://img.icons8.com/color/48/null/unreal-engine.png",
   },

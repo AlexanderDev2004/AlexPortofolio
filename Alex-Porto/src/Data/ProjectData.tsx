@@ -5,13 +5,13 @@ const projectData = [
     {
         id: 1,
         image: "",
-        title: "My Portiofolio",
-        subtitle: "this is web my personal ",
-        description: "This personal website is used to update what I am working on on a project, this website is used using next js.",
+        title: "My Portfolio",
+        subtitle: "This is my personal website",
+        description: "This personal website is used to update what I am working on on a project. This website is built using Next.js.",
         tech: [
-            tech[22].id,
-            tech[22].title,
-            tech[22].image,
+            tech[10].id,
+            tech[10].title,
+            tech[10].image,
         ],
         source: "https://github.com/AlexanderDev2004/AlexPortofolio"
     },
@@ -19,8 +19,8 @@ const projectData = [
         id: 2,
         image: "",
         title: "Escape From Alex",
-        subtitle: "Escape From Alex is my Game Project Using Unity",
-        description: "This game uses C# and Unity as the engine, this game was my project during vocational school",
+        subtitle: "Escape From Alex is my game project using Unity",
+        description: "This game uses C# and Unity as the engine. This game was my project during vocational school.",
         tech: [
             tech[2].id,
             tech[2].title,
@@ -29,4 +29,5 @@ const projectData = [
         source: "https://github.com/AlexanderDev2004/AlexPortofolio"
     },
 ];
-console.log(projectData);
+
+export default projectData;
