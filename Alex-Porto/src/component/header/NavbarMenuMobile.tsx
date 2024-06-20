@@ -29,12 +29,12 @@ export default function NavbarMenuMobile({ hover }: NavbarMenuProps) {
           className="menu menu-sm dropdown-content mt-3 z-10 right-0 p-3 shadow bg-base-100 rounded-box w-52"
         >
           <li>
-            <Link href="/experiences" className={hover}>
+            <Link href= "/experiences" className={hover}>
               Experiences
             </Link>
           </li>
           <li>
-            <Link href="/projects" className={hover}>
+            <Link href= {'/Projects'} className={hover}>
               Projects
             </Link>
           </li>
