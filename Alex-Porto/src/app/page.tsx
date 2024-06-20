@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import Navbar from "@/component/header/Navbar";
-import { FaGithub, FaLinkedinIn, FaInstagram } from "react-icons/fa";
+import { FaGithub, FaLinkedinIn, FaInstagram, FaFolder } from "react-icons/fa";
 import Footer from "@/component/footer/footer";
 import AboutData from "@/Data/AboutData";
 // import ProjectData from "@/Data/ProjectData";
@@ -21,7 +21,7 @@ export default function Home() {
 
       {/* Projects */}
       <div className="flex flex-col items-center justify-center mt-2">
-        <h1 className="text-4xl font-bold text-center">Projects 📁</h1>
+        <h1 className="text-4xl font-bold text-center">Projects <FaFolder  className="inline-block text-yellow-500" /></h1>
         {/* <ul className="mt-4 space-y-2">
           {ProjectData.map((project) => (
             <li key={project.id}>
