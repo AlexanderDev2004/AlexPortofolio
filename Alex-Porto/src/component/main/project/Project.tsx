@@ -7,7 +7,7 @@ export default function Project() {
         <div className="grid gap-4 md:grid-cols-3">
             {projects.map((project) => (
                 <div key={project.id} className="p-2 border-dashed border border-primary rounded-md">
-                    <Link key={project.id} href={`/projects/${project.id}`}>
+                    <Link key={project.id} href={`/projects/${project.id}`} legacyBehavior>
 
                         <h1 className="font-bold text-sm md:text-lg">{project.title}</h1>
                         <p className="text-sm md:text-lg my-2">{project.subtitle}</p>
@@ -20,5 +20,5 @@ export default function Project() {
                 </div>
             ))}
         </div>
-    )
+    );
 }

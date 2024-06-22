@@ -25,8 +25,8 @@ export default function Home() {
         <ul className="mt-4 space-y-2">
           {ProjectData.map((project) => (
             <li key={project.id}>
-              <Link href={`/projects/${project.id}`}>
-                <a className="text-2xl text-center">{project.title}</a>
+              <Link href={`/projects/${project.id}`} className="text-2xl text-center">
+                {project.title}
               </Link>
             </li>
           ))}
