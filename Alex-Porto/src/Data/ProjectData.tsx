@@ -14,10 +14,11 @@ const projectData = [
             tech[10].image,
         ],
         source: "https://github.com/AlexanderDev2004/AlexPortofolio"
+        
     },
     {
         id: 2,
-        image: "",
+        image: "/assets/project/EscapeFromAlex.png",
         title: "Escape From Alex",
         subtitle: "Escape From Alex is my game project using Unity",
         description: "This game uses C# and Unity as the engine. This game was my project during vocational school.",
@@ -26,7 +27,7 @@ const projectData = [
             tech[2].title,
             tech[2].image,
         ],
-        source: "https://github.com/AlexanderDev2004/AlexPortofolio"
+        source: ""
     },
 ];
 
