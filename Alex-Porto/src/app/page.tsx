@@ -25,7 +25,7 @@ export default function Home() {
         <h1 className="text-4xl font-bold text-center">Projects <FaFolder className="inline-block text-yellow-500" /></h1>
         <ul className="mt-4 space-y-2">
           {ProjectData.map((project) => (
-            <li key={project.id}>
+            <li  className = "flex flex-col items-start justify-start font-bold hover:text-accent mt-2" key={project.id}>
               <Link href={`/projects/${project.id}`} className="text-2xl text-center">
                 {project.title}
               </Link>
