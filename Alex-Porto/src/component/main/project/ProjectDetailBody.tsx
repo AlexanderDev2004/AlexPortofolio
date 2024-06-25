@@ -1,13 +1,14 @@
 "use client";
 
 import Link from "next/link";
-import { FaGithub } from "react-icons/fa";
-
+import { FaGithub} from "react-icons/fa";
+import { IoEyeSharp } from "react-icons/io5";
 interface ProjectDetailHeaderProps {
     project: {
         title: string,
         description: string,
         source: string
+        Views : String
     }
 }
 
@@ -26,6 +27,7 @@ export default function ProjectDetailBody({ project }: ProjectDetailHeaderProps)
 
                             <FaGithub size={30} className="mr-2" />Source
                         </Link>
+                        <a className="flex items-center font-bold text-xl hover:text-primary transition" href="http://"><IoEyeSharp />Views</a>
                     </div>
                 </div>
                 <p className="text-base border-dashed border-t border-primary py-5">{project?.description}</p>

@@ -21,7 +21,7 @@ export default function Home() {
       </div>
 
       {/* Projects */}
-      <div className="flex flex-col items-center justify-center mt-8">
+      <div className="flex flex-col items-center justify-center mt-4">
         <h1 className="text-4xl font-bold text-center">Projects <FaFolder className="inline-block text-yellow-500" /></h1>
         <ul className="mt-4 space-y-2">
           {ProjectData.map((project) => (
@@ -32,7 +32,7 @@ export default function Home() {
             </li>
           ))}
         </ul>
-        <Link className="font-bold hover:text-accent mt-2" href={'/projects'}>See More...</Link>
+        <a className="font-bold hover:text-accent mt-2" href={'/projects'}>See More...</a>
       </div>
 
       {/* Media Links */}

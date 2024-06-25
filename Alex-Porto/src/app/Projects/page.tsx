@@ -1,4 +1,5 @@
 import Project from "@/component/main/project/Project";
+
 import Navbar from "@/component/header/Navbar";
 import Footer from "@/component/footer/footer";
 
