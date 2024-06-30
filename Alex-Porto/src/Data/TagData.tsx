@@ -15,6 +15,10 @@ const TagData = [
         id : 4,
         name : "Freelance",
     },
+    {
+        id : 5,
+        name : "Field Work",
+    },
     
 ]
 
