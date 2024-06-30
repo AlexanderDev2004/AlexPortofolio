@@ -8,13 +8,14 @@ export default function Project() {
             {projects.map((project) => (
                 <div key={project.id} className="p-2 border-dashed border border-primary rounded-md">
                     <Link key={project.id} href={`/projects/${project.id}`} legacyBehavior>
-
-                        <h1 className="font-bold text-sm md:text-lg">{project.title}</h1>
-                        <p className="text-sm md:text-lg my-2">{project.subtitle}</p>
-                        <div className="flex flex-row gap-2">
-                            {project.tech && project.tech.map((tech) => (
-                                <p className="text-xs md:text-xs p-1 border-dashed border border-primary rounded" key={tech}>{tech}</p>
-                            ))}
+                        <div>
+                            <h1 className="font-bold text-sm md:text-lg">{project.title}</h1>
+                            <p className="text-sm md:text-lg my-2">{project.subtitle}</p>
+                            <div className="flex flex-row gap-2">
+                                {project.tech && project.tech.map((tech) => (
+                                    <p className="text-xs md:text-xs p-1 border-dashed border border-primary rounded" key={tech}>{tech}</p>
+                                ))}
+                            </div>
                         </div>
                     </Link>
                 </div>

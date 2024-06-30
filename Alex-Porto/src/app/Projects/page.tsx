@@ -1,5 +1,6 @@
 import Project from "@/component/main/project/Project";
-
+import React from "react";
+// import ProjectDetails from "@/component/main/project/ProjectDetails";
 import Navbar from "@/component/header/Navbar";
 import Footer from "@/component/footer/footer";
 

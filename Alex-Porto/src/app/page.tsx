@@ -32,7 +32,7 @@ export default function Home() {
             </li>
           ))}
         </ul>
-        <a className="font-bold hover:text-accent mt-2" href={'/projects'}>See More...</a>
+        <a className="font-bold hover:text-accent mt-2" href={'/Projects'}>See More...</a>
       </div>
 
       {/* Media Links */}
