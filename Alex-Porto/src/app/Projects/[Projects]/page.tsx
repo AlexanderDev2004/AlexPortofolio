@@ -1,31 +1,32 @@
-import Navbar from "@/component/header/Navbar";
 import Footer from "@/component/footer/footer";
+import Navbar from "@/component/header/Navbar";
 import projectData from "@/Data/ProjectData";
-import ProjectDetail from "@/component/main/project/ProjectDetail";
+import ProjectDetail, { ProjectDetailProps } from "@/component/main/project/ProjectDetail";
 
 interface ProjectDetailPageProps {
   params: {
-    project: string
-  }
+    project: string;
+  };
 }
 
 export default function ProjectDetailPage({ params }: ProjectDetailPageProps) {
-  const hover = "hover:text-primary transition ease-in-out delay-150 hover:-translate-y-0.5 duration-300";
-  const project = projectData.find((item) => item.id === Number(params?.project));
+  const hover =
+    "hover:text-primary transition ease-in-out delay-150 hover:-translate-y-0.5 duration-300";
+  const projectId = parseInt(params.project, 10); // Ensure correct parsing to an integer
+  const project = projectData.find((item) => item.id === projectId);
 
   return (
     <div className="max-w-screen-lg mx-auto">
       <Navbar hover={hover} />
-      <div className="ml-2 mr-2">
+      <div className="mx-2">
         <h1 className="font-bold text-xl mb-2">Detail Project</h1>
         {project ? (
-          <ProjectDetail project={project} />
+          <ProjectDetail project={project as ProjectDetailProps["project"]} />
         ) : (
-          <p>Project not found</p>
+          <p className="text-red-500">Project not found</p>
         )}
-        {/* footer */}
-        <Footer />
       </div>
+      <Footer />
     </div>
-  )
+  );
 }
