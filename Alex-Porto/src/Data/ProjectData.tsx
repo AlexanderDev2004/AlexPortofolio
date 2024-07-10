@@ -1,5 +1,4 @@
 import techData from "./TechData";
-
 const tech = techData;
 
 const projectData = [
@@ -11,8 +10,8 @@ const projectData = [
         description: "This personal website is used to update what I am working on on a project. This website is built using Next.js.",
         tech: [
             tech[10].id,
-            tech[10].title,
-            tech[10].image,
+            tech[1].id,
+            tech[9].id
         ],
         source: "https://github.com/AlexanderDev2004/AlexPortofolio",
         Views: "https://alex-portofolio.vercel.app/"
@@ -26,11 +25,11 @@ const projectData = [
         description: "This game uses C# and Unity as the engine. This game was my project during vocational school.",
         tech: [
             tech[2].id,
-            tech[2].title,
-            tech[2].image,
+            tech[22].id
+            
         ],
-        source: "",
-        Views: ""
+        source: "maaf Tidak tersedia",
+        Views: "https://alex-game-dev-indonesia.itch.io/escape-from-alex"
     },
     {
         id: 3,
@@ -40,11 +39,10 @@ const projectData = [
         description: "This game First uses C# and Unity as the engine. This game was my project personal.",
         tech: [
             tech[2].id,
-            tech[2].title,
-            tech[2].image,
+            tech[22].id
         ],
-        source: "",
-        Views: ""
+        source: "maaf Tidak tersedia",
+        Views: "https://alex-game-dev-indonesia.itch.io/jump-box"
     },
 ];
 
