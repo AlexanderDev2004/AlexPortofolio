@@ -13,7 +13,7 @@ export default function ProjectDetailPage({ params }: ProjectDetailPageProps) {
   const hover =
     "hover:text-primary transition ease-in-out delay-150 hover:-translate-y-0.5 duration-300";
   const projectId = parseInt(params.projects); 
-  const project = projectData.find((item) => item.id === projectId);
+  const project = projectData.find((item)  => item.id === projectId);
 
   return (
     <div className="max-w-screen-lg mx-auto">
