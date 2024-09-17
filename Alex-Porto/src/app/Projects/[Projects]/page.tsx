@@ -5,14 +5,18 @@ import ProjectDetail, { ProjectDetailProps } from "@/component/main/project/Proj
 
 interface ProjectDetailPageProps {
   params: {
-    project: string;
+    projects: string;
   };
 }
 
 export default function ProjectDetailPage({ params }: ProjectDetailPageProps) {
   const hover =
     "hover:text-primary transition ease-in-out delay-150 hover:-translate-y-0.5 duration-300";
-  const projectId = parseInt(params.project, 10); // Ensure correct parsing to an integer
+    
+  // Correctly parse the project ID from the string
+  const projectId = parseInt(params.projects); 
+
+  // Find the corresponding project by ID
   const project = projectData.find((item) => item.id === projectId);
 
   return (
@@ -21,8 +25,10 @@ export default function ProjectDetailPage({ params }: ProjectDetailPageProps) {
       <div className="mx-2">
         <h1 className="font-bold text-xl mb-2">Detail Project</h1>
         {project ? (
+          // Pass project data if found
           <ProjectDetail project={project as ProjectDetailProps["project"]} />
         ) : (
+          // Show error message if no project is found
           <p className="text-red-500">Project not found</p>
         )}
       </div>
